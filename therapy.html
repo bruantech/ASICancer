@@ -5,9 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/tailwind.css" />
-    <title>Cancer</title>
+    <script
+      defer
+      src="https://unpkg.com/@alpinejs/intersect@3.x.x/dist/cdn.min.js"
+    ></script>
+    <script
+      defer
+      src="https://unpkg.com/alpinejs@3.2.3/dist/cdn.min.js"
+    ></script>
+    <title>Health Plans</title>
   </head>
-  <body class="bg-white">
+  <body class="bg-white" x-data>
     <div class="w-full bg-gray-100 py-1 px-2">
       <div class="main-container flex justify-center space-x-5 md:justify-end">
         <a
@@ -131,10 +139,10 @@
               </div>
             </div>
             <div class="group relative cursor-pointer py-2">
-              <a href="cancer.html" class="active-menu">Cancer Screening</a>
+              <a href="cancer.html" class="inactive-menu">Cancer Screening</a>
             </div>
             <div class="group relative cursor-pointer py-2">
-              <a href="therapy.html" class="inactive-menu">Cancer Therapy </a>
+              <a href="therapy.html" class="active-menu">Cancer Therapy </a>
             </div>
             <div class="group relative cursor-pointer py-2">
               <a href="services.html" class="inactive-menu">Services</a>
@@ -143,50 +151,50 @@
                 onClick=""
               >
                 <a
-                  href="services.html#operating"
-                  class="my-3 block py-1 px-4 text-gray-100 transition duration-700 hover:bg-white hover:text-primary md:my-0"
+                  href="#operating"
+                  class="service-menu-link my-3 block py-1 px-4 text-gray-100 transition duration-700 hover:bg-white hover:text-primary md:my-0"
                   >Operating Theatre</a
                 >
 
                 <a
-                  href="services.html#laboratory"
-                  class="block py-1 px-4 text-gray-100 transition duration-700 hover:bg-white hover:text-primary md:my-0"
+                  href="#laboratory"
+                  class="service-menu-link block py-1 px-4 text-gray-100 transition duration-700 hover:bg-white hover:text-primary md:my-0"
                 >
                   Laboratory
                 </a>
                 <a
-                  href="services.html#gopd"
-                  class="block py-1 px-4 text-gray-100 transition duration-700 hover:bg-white hover:text-primary md:my-0"
+                  href="#gopd"
+                  class="service-menu-link block py-1 px-4 text-gray-100 transition duration-700 hover:bg-white hover:text-primary md:my-0"
                 >
                   GOPD/IPD</a
                 >
                 <a
-                  href="services.html#pharmacy"
-                  class="block py-1 px-4 text-gray-100 transition duration-700 hover:bg-white hover:text-primary md:my-0"
+                  href="#pharmacy"
+                  class="service-menu-link block py-1 px-4 text-gray-100 transition duration-700 hover:bg-white hover:text-primary md:my-0"
                 >
                   Pharmacy</a
                 >
                 <a
-                  href="services.html#emergency"
-                  class="block py-1 px-4 text-gray-100 transition duration-700 hover:bg-white hover:text-primary md:my-0"
+                  href="#emergency"
+                  class="service-menu-link block py-1 px-4 text-gray-100 transition duration-700 hover:bg-white hover:text-primary md:my-0"
                 >
                   Emergency Services</a
                 >
                 <a
-                  href="services.html#antenatal"
-                  class="block py-1 px-4 text-gray-100 transition duration-700 hover:bg-white hover:text-primary md:my-0"
+                  href="#antenatal"
+                  class="service-menu-link block py-1 px-4 text-gray-100 transition duration-700 hover:bg-white hover:text-primary md:my-0"
                 >
                   Antenatal</a
                 >
                 <a
-                  href="services.html#bloodbank"
-                  class="block py-1 px-4 text-gray-100 transition duration-700 hover:bg-white hover:text-primary md:my-0"
+                  href="#bloodbank"
+                  class="service-menu-link block py-1 px-4 text-gray-100 transition duration-700 hover:bg-white hover:text-primary md:my-0"
                 >
                   Blood Bank
                 </a>
                 <a
-                  href="services.html#dialysis"
-                  class="block py-1 px-4 text-gray-100 transition duration-700 hover:bg-white hover:text-primary md:my-0"
+                  href="#dialysis"
+                  class="service-menu-link block py-1 px-4 text-gray-100 transition duration-700 hover:bg-white hover:text-primary md:my-0"
                 >
                   Dialysis
                 </a>
@@ -219,186 +227,110 @@
         </button>
       </div>
     </div>
-    <div class="w-full">
-      <div class="">
-        <div class="main-container flex py-6">
-          <div class="w-full py-4 md:w-1/2">
-            <h1 class="px-2 py-2 text-4xl font-bold text-gray-900">
-              ASI UKPO COMPREHENSIVE CANCER CENTER
+
+    <div class="w-full bg-white" style="">
+      <div class="w-full" style="">
+        <div class="main-container bg-white py-6 md:bg-transparent">
+          <div class="mx-auto w-full py-4 md:w-1/2">
+            <h1
+              class="px-2 py-2 text-center text-4xl font-bold text-black"
+              x-intersect="$el.classList.add('fadeInUp')"
+            >
+              Cancer Therapies
             </h1>
-            <p class="px-2 py-2 text-gray-700">
-              We have cancer screening packages for families and corporate
-              organizations. We can structure group screenings for organizations
-              and families.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main-container mt-10">
+      <div class="flex flex-col space-y-24 py-5 md:px-20">
+        <div
+          class="flex flex-col rounded-[32px] md:flex-row"
+          x-intersect="$el.classList.add('fadeInUp')"
+        >
+          <div class="w-full p-4 md:w-1/2">
+            <h2 class="text-2xl font-bold">RADIOTHERAPY</h2>
+            <p class="mt-4">
+              ASI Ukpo Comprehensive Cancer Centre utilizes an Elekta Synergy
+              multimodal multi-energy LINAC with integrated 160-leaf
+              interdigitating multileaf collimators, with the ability to deliver
+              precise and rapid external beam radiation therapy using the finest
+              techniques available - including 3D-CRT, IMRT, VMAT and SRS – for
+              the treatment of cancer. It is the first centre with a ProKnow
+              Planning tool for online auto segmentation. Our Monaco 5.5.1 is
+              deployed for advanced radiotherapy techniques with the best
+              algorithms. Our 160-MLC centre deploys patient-specific QA with
+              the most sophisticated 4D Octavius dosimetry tools. We also employ
+              MOSAIQ Medical Oncology, adopting a robust database streamlining
+              our patient data, clinical regimens and pharmacy information, so
+              we can deliver the best possible care for every patient. The
+              Cancer Centre is equipped with its own CT Simulator, a 90-cm large
+              bore Canon CT machine, the largest in the region, with the
+              advantage of accommodating all immobilization devices to achieve
+              the most precise diagnosis and reproducibility during treatment.
             </p>
-
-            <div class="mt-6 mb-5 flex flex-1">
-              <a href="#cancer" class="button">Read More</a>
-            </div>
           </div>
-          <div class="w-full py-4 md:w-1/2">
-            <img src="img/cancer-header.png" class="object-cover" alt="" />
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      class="md;bg w-full"
-      style="
-        background-image: url(img/cancer-bg.png);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-        object-fit: cover;
-      "
-    >
-      <div class="w-full bg-white md:bg-white/70 md:py-10">
-        <div class="main-container flex flex-col">
-          <h1 class="heading text-center" id="cancer">
-            Cancer screening covering the 4 preventable cancers
-          </h1>
-          <div
-            class="flex flex-col items-center justify-center py-5 md:flex-row md:space-x-5"
-          >
-            <div
-              class="flex w-full flex-col items-center justify-center space-y-2 md:w-1/4"
-            >
-              <span>
-                <img src="img/colon-cancer.png" alt="" />
-              </span>
-              <span class="font-semibold">Colon Cancer </span>
-            </div>
-            <div
-              class="flex w-full flex-col items-center justify-center space-y-2 border-l border-gray-600 md:w-1/4"
-            >
-              <span>
-                <img src="img/breast-cancer.png" alt="" />
-              </span>
-              <span class="font-semibold">Breast Cancer </span>
-            </div>
-            <div
-              class="flex w-full flex-col items-center justify-center space-y-2 border-l border-gray-600 md:w-1/4"
-            >
-              <span>
-                <img src="img/cervical-cancer.png" alt="" />
-              </span>
-              <span class="font-semibold">Cervical Cancer </span>
-            </div>
-            <div
-              class="flex w-full flex-col items-center justify-center space-y-2 border-l border-gray-600 md:w-1/4"
-            >
-              <span>
-                <img src="img/prostate-cancer.png" alt="" />
-              </span>
-
-              <span class="font-semibold">Prostate Cancer </span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- <div
-      class="w-full"
-      style="
-        background-image: url(img/cancer-bg.png);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-        object-fit: cover;
-      "
-    >
-      <div class="w-full bg-primary py-10 md:bg-primary/70">
-        <div class="main-container flex flex-col">
-          <h1 class="heading px-3 text-white">Don’t Neglect Your Health</h1>
-          <p class="w-full py-2 px-3 text-white md:w-1/3">
-            The Cancer Screening Package listed below is designed to diagnose
-            cancer in its early stages for females, before it may become
-            symptomatically apparent.
-          </p>
-          <div class="mt-5 px-3">
-            <a
-              href="#"
-              class="rounded-full bg-white px-6 py-3 text-lg font-semibold text-black"
-              >See Details</a
-            >
-          </div>
-        </div>
-      </div>
-    </div> -->
-    <div
-      class="main-container mt-10 flex flex-col-reverse space-y-10 md:flex-row-reverse md:space-y-0"
-    >
-      <div class="w-full md:w-1/2">
-        <img src="img/Cancer-Femalre.png" alt="" />
-      </div>
-      <div class="flex w-full flex-col justify-center px-5 md:w-1/2">
-        <h1 class="heading">Cancer Screening Package for Women</h1>
-        <p>
-          Cancer is a disease in which abnormal cells divide uncontrollably and
-          destroy body tissue. The tumor begins from a particular part in the
-          body gradually tends to spread to other parts of the body as well.
-          Early detection of cancer can greatly improve the odds of successful
-          treatments and survival.
-        </p>
-        <div class="my-10">
-          <a href="cancer-female.html" class="button">Read More</a>
-        </div>
-      </div>
-    </div>
-    <div
-      class="main-container mt-10 flex flex-col space-y-5 md:flex-row md:space-y-0"
-    >
-      <div class="w-full md:w-1/2">
-        <img src="img/Cancer-Male.png" alt="" />
-      </div>
-      <div class="flex w-full flex-col justify-center px-5 md:w-1/2">
-        <h1 class="heading">Cancer Screening Package for Males</h1>
-        <p>
-          Likewise, the screening package for male is designed to diagnose
-          cancer in its early stages, before it may become symptomatically
-          apparent.
-        </p>
-        <div class="mt-10">
-          <a href="cancer-male.html" class="button">Read More</a>
-        </div>
-      </div>
-    </div>
-    <div
-      class="bg-full mt-10 flex h-[400px] items-center py-10"
-      style="background-image: url('img/bg-dr.png')"
-    >
-      <div class="main-container">
-        <div class="">
-          <h1 class="heading text-white">Contact Us</h1>
-        </div>
-        <div class="flex w-full">
-          <div class="flex w-1/2 flex-col md:w-5/12">
-            <label for="name" class="text-white">Your Name</label>
-            <input
-              type="text"
-              id="name"
-              class="mt-2 w-full rounded-md px-3 py-2"
-              placeholder="John Doe"
-            />
-          </div>
-          <div class="ml-2 flex w-1/2 flex-col md:ml-5 md:w-5/12">
-            <label for="email" class="text-white">Your Email</label>
-            <input
-              type="email"
-              id="email"
-              class="mt-2 w-full rounded-md px-3 py-2"
-              placeholder="example@example.com"
+          <div class="w-full md:w-1/2">
+            <img
+              src="img/investigations.png"
+              class="max-h-[330px] w-full rounded-2xl object-cover shadow-2xl md:ml-16 md:-mb-16"
+              alt=""
             />
           </div>
         </div>
-        <div class="mt-5 flex w-full flex-col">
-          <label for="message" class="text-white">Your Message</label>
-          <textarea
-            name="message"
-            class="mt-2 w-full rounded-md px-3 py-2 md:w-11/12"
-            placeholder="Message"
-            rows="6"
-          ></textarea>
+
+        <div
+          class="flex flex-col rounded-[32px] md:flex-row-reverse"
+          x-intersect="$el.classList.add('fadeRight')"
+        >
+          <div class="w-full p-4 md:w-1/2">
+            <h2 class="text-2xl font-bold">BRACHYTHERAPY</h2>
+            <p class="mt-4">
+              Our Flexitron HDR Brachy machine offers a safe, fast and full
+              brachytherapy solution. It is designed for precise, targeted
+              treatment of various cancers such as cervical, prostate, breast,
+              skin and rectal. Brachytherapy is suitable as a single modality or
+              in combination with other treatments.Elekta Brachytherapy offers
+              best-in-class clinical solutions, a worldwide presence and above
+              all, a commitment to patient care.
+            </p>
+          </div>
+          <div class="w-full md:w-1/2">
+            <img
+              src="img/labortory.png"
+              class="-mb-16 max-h-[330px] w-full rounded-2xl object-cover shadow-2xl md:-ml-16"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div
+          class="flex flex-col rounded-[32px] md:flex-row"
+          x-intersect="$el.classList.add('fadeInUp')"
+        >
+          <div class="w-ful mt-10 p-4 md:w-1/2">
+            <h2 class="text-2xl font-bold">CHEMOTHERAPY</h2>
+            <p class="mt-4">
+              We offer excellent chemotherapy services, including
+              pre-chemotherapy counselling, comprehensive nutritional support
+              and reconstitution of chemotherapy in a fully functional
+              chemotherapy suite with a bio-safety cabinet. Our chemotherapy
+              drugs are sourced directly from registered, approved world-class
+              pharmaceutical companies. The presence of chemotherapy and
+              radiotherapy in one location provides the opportunity to undertake
+              adjuvant therapy and combination therapy seamlessly, providing
+              optimal treatment of the cancer, reducing the intensity of
+              sequelae / side effects, achieving a high cure rate and a better
+              quality of life thereafter.
+            </p>
+          </div>
+          <div class="w-full md:w-1/2">
+            <img
+              src="img/operating.png"
+              class="-mb-16 max-h-[330px] w-full rounded-2xl object-cover shadow-2xl md:ml-16"
+              alt=""
+            />
+          </div>
         </div>
       </div>
     </div>

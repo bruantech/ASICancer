@@ -10,6 +10,12 @@
 .heading {
   @apply py-4 text-3xl font-bold;
 }
+.service-para {
+  overflow: hidden;
+  -webkit-line-clamp: 4;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
 .service-section {
   @apply absolute;
 }
