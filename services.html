@@ -282,7 +282,7 @@
       class="main-container mt-10 grid grid-cols-1 gap-y-4 md:grid-cols-12 md:gap-x-4"
     >
       <div
-        class="flex flex-col justify-center justify-items-center space-y-5 bg-blue-200 py-10 px-10 md:col-span-4"
+        class="flex h-full flex-col justify-center justify-items-center space-y-5 bg-blue-200 py-10 px-10 md:col-span-4"
       >
         <a
           href="#chemotherapy"
@@ -302,10 +302,61 @@
         >
           Brachytherapy
         </a>
+        <a
+          href="#brachytherapy"
+          class="service-link inactive-service px-4 py-2 text-center opacity-0 hover:bg-primary hover:text-white"
+        >
+          Brachytherapy
+        </a>
+        <a
+          href="#brachytherapy"
+          class="service-link inactive-service px-4 py-2 text-center opacity-0 hover:bg-primary hover:text-white"
+        >
+          Brachytherapy </a
+        ><a
+          href="#brachytherapy"
+          class="service-link inactive-service px-4 py-2 text-center opacity-0 hover:bg-primary hover:text-white"
+        >
+          Brachytherapy
+        </a>
+        <a
+          href="#brachytherapy"
+          class="service-link inactive-service px-4 py-2 text-center opacity-0 hover:bg-primary hover:text-white"
+        >
+          Brachytherapy
+        </a>
+        <a
+          href="#brachytherapy"
+          class="service-link inactive-service px-4 py-2 text-center opacity-0 hover:bg-primary hover:text-white"
+        >
+          Brachytherapy </a
+        ><a
+          href="#brachytherapy"
+          class="service-link inactive-service px-4 py-2 text-center opacity-0 hover:bg-primary hover:text-white"
+        >
+          Brachytherapy
+        </a>
+        <a
+          href="#brachytherapy"
+          class="service-link inactive-service px-4 py-2 text-center opacity-0 hover:bg-primary hover:text-white"
+        >
+          Brachytherapy </a
+        ><a
+          href="#brachytherapy"
+          class="service-link inactive-service px-4 py-2 text-center opacity-0 hover:bg-primary hover:text-white"
+        >
+          Brachytherapy
+        </a>
+        <a
+          href="#brachytherapy"
+          class="disabled service-link inactive-service px-4 py-2 text-center opacity-0 hover:bg-primary hover:text-white"
+        >
+          Brachytherapy
+        </a>
       </div>
       <div class="relative col-span-8">
         <div
-          class="service-section col-span-8 scroll-mt-28 md:px-4"
+          class="active-service service-section col-span-8 scroll-mt-28 md:px-4"
           id="chemotherapy"
         >
           <div>
@@ -326,9 +377,6 @@
               sequelae / side effects, achieving a high cure rate and a better
               quality of life thereafter.
             </p>
-            <div class="my-10">
-              <a href="#" class="button">Read More</a>
-            </div>
           </div>
         </div>
         <div
@@ -363,7 +411,7 @@
         </div>
         <div
           class="service-section col-span-8 scroll-mt-28 md:px-4"
-          id="operating"
+          id="brachytherapy"
         >
           <div>
             <img src="img/brachytherapy.jpg" alt="" />
@@ -383,7 +431,7 @@
         </div>
       </div>
     </div>
-    <div class="mt-[700px] bg-white md:mt-10">
+    <div class="mt-[700px] bg-white md:mt-20">
       <footer class="body-font main-container bg-white text-gray-600">
         <div
           class="container mx-auto flex flex-col flex-wrap py-12 md:flex-row md:flex-nowrap md:items-center lg:items-start"
@@ -592,18 +640,16 @@
           const link = document.URL.split("#");
           const id = link[link.length - 1];
           let element = document.getElementById(id);
-
           if (link.length < 2) {
-            element = document.getElementById("operating");
+            element = document.getElementById("chemotherapy");
           }
           element.classList.remove("opacity-0");
         }, 100);
       }
       window.onload = () => {
-        setTimeout(showService, 200);
+        setTimeout(showService, 500);
       };
     </script>
   </body>
   <script src="javascript/responsive.js"></script>
-  <script src="javascript/slider.js"></script>
 </html>
