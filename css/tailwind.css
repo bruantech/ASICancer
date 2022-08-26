@@ -1070,9 +1070,9 @@ video {
   background-color: rgb(37 99 235 / 0.3);
 }
 
-.bg-blue-200 {
+.bg-red-200 {
   --tw-bg-opacity: 1;
-  background-color: rgb(191 219 254 / var(--tw-bg-opacity));
+  background-color: rgb(254 202 202 / var(--tw-bg-opacity));
 }
 
 .fill-current {
@@ -2164,8 +2164,8 @@ video {
     margin-left: auto;
   }
 
-  .md\:mt-10 {
-    margin-top: 2.5rem;
+  .md\:mt-20 {
+    margin-top: 5rem;
   }
 
   .md\:ml-16 {
@@ -2178,10 +2178,6 @@ video {
 
   .md\:-ml-16 {
     margin-left: -4rem;
-  }
-
-  .md\:mt-20 {
-    margin-top: 5rem;
   }
 
   .md\:block {
