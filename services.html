@@ -141,9 +141,7 @@
             <div class="group relative cursor-pointer py-2">
               <a href="cancer.html" class="inactive-menu">Cancer Screening</a>
             </div>
-            <div class="group relative cursor-pointer py-2">
-              <a href="therapy.html" class="inactive-menu">Cancer Therapy </a>
-            </div>
+
             <div class="group relative cursor-pointer py-2">
               <a href="services.html" class="active-menu">Services</a>
               <div
@@ -151,59 +149,27 @@
                 onClick=""
               >
                 <a
-                  href="#operating"
+                  href="#chemotherapy"
+                  class="service-menu-link block py-1 px-4 text-gray-100 transition duration-700 hover:bg-white hover:text-primary md:my-0"
+                >
+                  Chemotherapy
+                </a>
+                <a
+                  href="#radiotherapy"
                   class="service-menu-link my-3 block py-1 px-4 text-gray-100 transition duration-700 hover:bg-white hover:text-primary md:my-0"
-                  >Operating Theatre</a
+                  >Radiotherapy</a
                 >
 
                 <a
-                  href="#laboratory"
+                  href="#brachytherapy"
                   class="service-menu-link block py-1 px-4 text-gray-100 transition duration-700 hover:bg-white hover:text-primary md:my-0"
                 >
-                  Laboratory
-                </a>
-                <a
-                  href="#gopd"
-                  class="service-menu-link block py-1 px-4 text-gray-100 transition duration-700 hover:bg-white hover:text-primary md:my-0"
-                >
-                  GOPD/IPD</a
-                >
-                <a
-                  href="#pharmacy"
-                  class="service-menu-link block py-1 px-4 text-gray-100 transition duration-700 hover:bg-white hover:text-primary md:my-0"
-                >
-                  Pharmacy</a
-                >
-                <a
-                  href="#emergency"
-                  class="service-menu-link block py-1 px-4 text-gray-100 transition duration-700 hover:bg-white hover:text-primary md:my-0"
-                >
-                  Emergency Services</a
-                >
-                <a
-                  href="#antenatal"
-                  class="service-menu-link block py-1 px-4 text-gray-100 transition duration-700 hover:bg-white hover:text-primary md:my-0"
-                >
-                  Antenatal</a
-                >
-                <a
-                  href="#bloodbank"
-                  class="service-menu-link block py-1 px-4 text-gray-100 transition duration-700 hover:bg-white hover:text-primary md:my-0"
-                >
-                  Blood Bank
-                </a>
-                <a
-                  href="#dialysis"
-                  class="service-menu-link block py-1 px-4 text-gray-100 transition duration-700 hover:bg-white hover:text-primary md:my-0"
-                >
-                  Dialysis
+                  Brachytherapy
                 </a>
               </div>
             </div>
             <div class="group relative cursor-pointer py-2">
-              <a href="contact.html" class="inactive-menu"
-                >Diagnostics Centre</a
-              >
+              <a href="contact.html" class="inactive-menu">Hospital</a>
             </div>
             <div class="group relative cursor-pointer py-2">
               <a href="contact.html" class="inactive-menu">Contact Us</a>
@@ -242,16 +208,16 @@
             </div>
             <div class="bg-primary py-10 px-4">
               <h3 class="text-center text-lg font-semibold text-white">
-                Medical Imaging
+                Chemotherapy
               </h3>
               <p class="service-para flex-1 py-2 text-center text-gray-100">
-                ASI Ukpo Hospital is furnished with modern equipment for
-                diagnostic imaging to guarantee accurate diagnosis which is the
-                first step towards proper healthcare. Our medical imaging...
+                We offer excellent chemotherapy services, including
+                pre-chemotherapy counselling, comprehensive nutritional support
+                and reconstitution of chemotherapy in a fully functional
               </p>
               <div class="mt-4 flex items-end justify-center">
                 <a
-                  href="#imaging"
+                  href="#chemotherapy"
                   class="service-link rounded-full bg-white px-3 py-2 text-center text-gray-800"
                 >
                   More Details
@@ -267,16 +233,16 @@
             </div>
             <div class="bg-primary py-10 px-4">
               <h3 class="text-center text-lg font-semibold text-white">
-                Laboratory Investigations
+                Radiotherapy
               </h3>
               <p class="service-para flex-1 py-2 text-center text-gray-100">
-                We also have as part of our diagnostic services, from routine to
-                specialized investigations for diseases and its effects manned
-                by a team of qualified and experienced medical laboratory...
+                ASI Ukpo Comprehensive Cancer Centre utilizes an Elekta Synergy
+                multimodal multi-energy LINAC with integrated 160-leaf
+                interdigitating multileaf collimators, with the ability
               </p>
               <div class="mt-4 flex items-end justify-center">
                 <a
-                  href="#laboratory"
+                  href="#radiotherapy"
                   class="service-link rounded-full bg-white px-3 py-2 text-center text-gray-800"
                 >
                   More Details
@@ -292,272 +258,16 @@
             </div>
             <div class="bg-primary py-10 px-4">
               <h3 class="text-center text-lg font-semibold text-white">
-                Blood Bank Service
+                Brachytherapy
               </h3>
               <p class="service-para py-2 text-center text-gray-100">
-                ASI Ukpo Blood Bank runs an efficient blood banking system that
-                caters for the various clinical transfusion needs of patients by
-                providing readily available blood products such as whole...
+                Our Flexitron HDR Brachy machine offers a safe, fast and full
+                brachytherapy solution. It is designed for precise, targeted
+                treatment of various cancers such as cervical, prostate, breast,
               </p>
               <div class="mt-4 flex items-end justify-center">
                 <a
-                  href="#bloodbank"
-                  class="service-link rounded-full bg-white px-3 py-2 text-center text-gray-800"
-                >
-                  More Details
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="mt-4" x-intersect="$el.classList.add('fadeLeft')" id="two">
-        <div
-          class="flex flex-col space-y-4 md:flex-row md:space-y-0 md:space-x-4"
-        >
-          <div class="w-full border-2 border-primary md:w-1/3">
-            <div
-              class="mx-auto my-5 flex h-16 w-16 items-center justify-center rounded-full border border-primary"
-            >
-              <svg
-                width="26"
-                height="28"
-                viewBox="0 0 26 28"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M23 10V12H24V16C24 16.7956 23.6839 17.5587 23.1213 18.1213C22.5587 18.6839 21.7957 19 21 19C20.2044 19 19.4413 18.6839 18.8787 18.1213C18.3161 17.5587 18 16.7956 18 16V12H19V10H16V16C16.0015 17.1521 16.4002 18.2684 17.1288 19.1608C17.8575 20.0532 18.8715 20.6671 20 20.899V22C20 23.0609 19.5786 24.0783 18.8284 24.8284C18.0783 25.5786 17.0609 26 16 26C14.9391 26 13.9217 25.5786 13.1716 24.8284C12.4214 24.0783 12 23.0609 12 22V19.816C12.6672 19.5801 13.2296 19.1159 13.5876 18.5055C13.9457 17.8951 14.0765 17.1778 13.9568 16.4803C13.8371 15.7828 13.4747 15.15 12.9337 14.6939C12.3926 14.2378 11.7077 13.9876 11 13.9876C10.2923 13.9876 9.60742 14.2378 9.06635 14.6939C8.52528 15.15 8.16288 15.7828 8.04321 16.4803C7.92354 17.1778 8.0543 17.8951 8.41237 18.5055C8.77045 19.1159 9.33279 19.5801 10 19.816V22C10 23.5913 10.6321 25.1174 11.7574 26.2426C12.8826 27.3679 14.4087 28 16 28C17.5913 28 19.1174 27.3679 20.2426 26.2426C21.3679 25.1174 22 23.5913 22 22V20.899C23.1285 20.6671 24.1426 20.0532 24.8712 19.1608C25.5998 18.2684 25.9985 17.1521 26 16V10H23ZM11 16C11.1978 16 11.3911 16.0586 11.5556 16.1685C11.72 16.2784 11.8482 16.4346 11.9239 16.6173C11.9996 16.8 12.0194 17.0011 11.9808 17.1951C11.9422 17.3891 11.847 17.5673 11.7071 17.7071C11.5673 17.847 11.3891 17.9422 11.1951 17.9808C11.0011 18.0194 10.8 17.9996 10.6173 17.9239C10.4346 17.8482 10.2784 17.72 10.1685 17.5556C10.0587 17.3911 10 17.1978 10 17C10 16.7348 10.1054 16.4804 10.2929 16.2929C10.4804 16.1054 10.7348 16 11 16Z"
-                  fill="black"
-                />
-                <path
-                  d="M22 2H18V0L16 0V2H8V0L6 0V2H2C1.46957 2 0.960859 2.21071 0.585786 2.58579C0.210714 2.96086 0 3.46957 0 4L0 24C0 24.5304 0.210714 25.0391 0.585786 25.4142C0.960859 25.7893 1.46957 26 2 26H6V24H2V4H6V6H8V4H16V6H18V4H22V8H24V4C24 3.46957 23.7893 2.96086 23.4142 2.58579C23.0391 2.21071 22.5304 2 22 2V2Z"
-                  fill="black"
-                />
-              </svg>
-            </div>
-            <div class="flex flex-1 flex-col bg-primary py-10 px-4">
-              <h3 class="text-center text-lg font-semibold text-white">
-                GOPD/IPD
-              </h3>
-              <p class="service-para flex-1 py-2 text-center text-gray-100">
-                Our team of doctors and nurses dedicated to all out-patient
-                clinic care in the areas of general medicine, Endocrinology,
-                Cardiology, Urology, Orthopaedics, Paediatrics, and dialysis...
-              </p>
-              <div class="mt-4 flex items-end justify-center">
-                <a
-                  href="#gopd"
-                  class="service-link rounded-full bg-white px-3 py-2 text-center text-gray-800"
-                >
-                  More Details
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="w-full border-2 border-primary md:w-1/3">
-            <div
-              class="mx-auto my-5 flex h-16 w-16 flex-1 items-center justify-center rounded-full border border-primary"
-            >
-              <svg
-                width="26"
-                height="28"
-                viewBox="0 0 26 28"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M23 10V12H24V16C24 16.7956 23.6839 17.5587 23.1213 18.1213C22.5587 18.6839 21.7957 19 21 19C20.2044 19 19.4413 18.6839 18.8787 18.1213C18.3161 17.5587 18 16.7956 18 16V12H19V10H16V16C16.0015 17.1521 16.4002 18.2684 17.1288 19.1608C17.8575 20.0532 18.8715 20.6671 20 20.899V22C20 23.0609 19.5786 24.0783 18.8284 24.8284C18.0783 25.5786 17.0609 26 16 26C14.9391 26 13.9217 25.5786 13.1716 24.8284C12.4214 24.0783 12 23.0609 12 22V19.816C12.6672 19.5801 13.2296 19.1159 13.5876 18.5055C13.9457 17.8951 14.0765 17.1778 13.9568 16.4803C13.8371 15.7828 13.4747 15.15 12.9337 14.6939C12.3926 14.2378 11.7077 13.9876 11 13.9876C10.2923 13.9876 9.60742 14.2378 9.06635 14.6939C8.52528 15.15 8.16288 15.7828 8.04321 16.4803C7.92354 17.1778 8.0543 17.8951 8.41237 18.5055C8.77045 19.1159 9.33279 19.5801 10 19.816V22C10 23.5913 10.6321 25.1174 11.7574 26.2426C12.8826 27.3679 14.4087 28 16 28C17.5913 28 19.1174 27.3679 20.2426 26.2426C21.3679 25.1174 22 23.5913 22 22V20.899C23.1285 20.6671 24.1426 20.0532 24.8712 19.1608C25.5998 18.2684 25.9985 17.1521 26 16V10H23ZM11 16C11.1978 16 11.3911 16.0586 11.5556 16.1685C11.72 16.2784 11.8482 16.4346 11.9239 16.6173C11.9996 16.8 12.0194 17.0011 11.9808 17.1951C11.9422 17.3891 11.847 17.5673 11.7071 17.7071C11.5673 17.847 11.3891 17.9422 11.1951 17.9808C11.0011 18.0194 10.8 17.9996 10.6173 17.9239C10.4346 17.8482 10.2784 17.72 10.1685 17.5556C10.0587 17.3911 10 17.1978 10 17C10 16.7348 10.1054 16.4804 10.2929 16.2929C10.4804 16.1054 10.7348 16 11 16Z"
-                  fill="black"
-                />
-                <path
-                  d="M22 2H18V0L16 0V2H8V0L6 0V2H2C1.46957 2 0.960859 2.21071 0.585786 2.58579C0.210714 2.96086 0 3.46957 0 4L0 24C0 24.5304 0.210714 25.0391 0.585786 25.4142C0.960859 25.7893 1.46957 26 2 26H6V24H2V4H6V6H8V4H16V6H18V4H22V8H24V4C24 3.46957 23.7893 2.96086 23.4142 2.58579C23.0391 2.21071 22.5304 2 22 2V2Z"
-                  fill="black"
-                />
-              </svg>
-            </div>
-            <div class="bg-primary py-10 px-4">
-              <h3 class="text-center text-lg font-semibold text-white">
-                Pharmacy
-              </h3>
-              <p class="service-para py-2 text-center text-gray-100">
-                Our pharmacy comprises both the inpatient, outpatient and
-                oncology pharmacy. The pharmacy offers services to all patients
-                on admission and also visiting patients providing the best...
-              </p>
-              <div class="mt-4 flex items-end justify-center">
-                <a
-                  href="#pharmacy"
-                  class="service-link rounded-full bg-white px-3 py-2 text-center text-gray-800"
-                >
-                  More Details
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="w-full border-2 border-primary md:w-1/3">
-            <div
-              class="mx-auto my-5 flex h-16 w-16 items-center justify-center rounded-full border border-primary"
-            >
-              <svg
-                width="26"
-                height="28"
-                viewBox="0 0 26 28"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M23 10V12H24V16C24 16.7956 23.6839 17.5587 23.1213 18.1213C22.5587 18.6839 21.7957 19 21 19C20.2044 19 19.4413 18.6839 18.8787 18.1213C18.3161 17.5587 18 16.7956 18 16V12H19V10H16V16C16.0015 17.1521 16.4002 18.2684 17.1288 19.1608C17.8575 20.0532 18.8715 20.6671 20 20.899V22C20 23.0609 19.5786 24.0783 18.8284 24.8284C18.0783 25.5786 17.0609 26 16 26C14.9391 26 13.9217 25.5786 13.1716 24.8284C12.4214 24.0783 12 23.0609 12 22V19.816C12.6672 19.5801 13.2296 19.1159 13.5876 18.5055C13.9457 17.8951 14.0765 17.1778 13.9568 16.4803C13.8371 15.7828 13.4747 15.15 12.9337 14.6939C12.3926 14.2378 11.7077 13.9876 11 13.9876C10.2923 13.9876 9.60742 14.2378 9.06635 14.6939C8.52528 15.15 8.16288 15.7828 8.04321 16.4803C7.92354 17.1778 8.0543 17.8951 8.41237 18.5055C8.77045 19.1159 9.33279 19.5801 10 19.816V22C10 23.5913 10.6321 25.1174 11.7574 26.2426C12.8826 27.3679 14.4087 28 16 28C17.5913 28 19.1174 27.3679 20.2426 26.2426C21.3679 25.1174 22 23.5913 22 22V20.899C23.1285 20.6671 24.1426 20.0532 24.8712 19.1608C25.5998 18.2684 25.9985 17.1521 26 16V10H23ZM11 16C11.1978 16 11.3911 16.0586 11.5556 16.1685C11.72 16.2784 11.8482 16.4346 11.9239 16.6173C11.9996 16.8 12.0194 17.0011 11.9808 17.1951C11.9422 17.3891 11.847 17.5673 11.7071 17.7071C11.5673 17.847 11.3891 17.9422 11.1951 17.9808C11.0011 18.0194 10.8 17.9996 10.6173 17.9239C10.4346 17.8482 10.2784 17.72 10.1685 17.5556C10.0587 17.3911 10 17.1978 10 17C10 16.7348 10.1054 16.4804 10.2929 16.2929C10.4804 16.1054 10.7348 16 11 16Z"
-                  fill="black"
-                />
-                <path
-                  d="M22 2H18V0L16 0V2H8V0L6 0V2H2C1.46957 2 0.960859 2.21071 0.585786 2.58579C0.210714 2.96086 0 3.46957 0 4L0 24C0 24.5304 0.210714 25.0391 0.585786 25.4142C0.960859 25.7893 1.46957 26 2 26H6V24H2V4H6V6H8V4H16V6H18V4H22V8H24V4C24 3.46957 23.7893 2.96086 23.4142 2.58579C23.0391 2.21071 22.5304 2 22 2V2Z"
-                  fill="black"
-                />
-              </svg>
-            </div>
-            <div class="bg-primary py-10 px-4">
-              <h3 class="text-center text-lg font-semibold text-white">
-                Emergency
-              </h3>
-              <p class="service-para flex-1 py-2 text-center text-gray-100">
-                We place patient care at the pinnacle of our company’s values,
-                we are dedicated to maintaining the highest standard of care and
-                to providing safe, timely and efficient ambulance transport is
-                available...
-              </p>
-              <div class="mt-4 flex items-end justify-center">
-                <a
-                  href="#emergency"
-                  class="service-link rounded-full bg-white px-3 py-2 text-center text-gray-800"
-                >
-                  More Details
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="mt-4" x-intersect="$el.classList.add('fadeRight')" id="three">
-        <div
-          class="flex flex-col space-y-4 md:flex-row md:space-y-0 md:space-x-4"
-        >
-          <div class="w-full border-2 border-primary md:w-1/3">
-            <div
-              class="mx-auto my-5 flex h-16 w-16 items-center justify-center rounded-full border border-primary"
-            >
-              <svg
-                width="26"
-                height="28"
-                viewBox="0 0 26 28"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M23 10V12H24V16C24 16.7956 23.6839 17.5587 23.1213 18.1213C22.5587 18.6839 21.7957 19 21 19C20.2044 19 19.4413 18.6839 18.8787 18.1213C18.3161 17.5587 18 16.7956 18 16V12H19V10H16V16C16.0015 17.1521 16.4002 18.2684 17.1288 19.1608C17.8575 20.0532 18.8715 20.6671 20 20.899V22C20 23.0609 19.5786 24.0783 18.8284 24.8284C18.0783 25.5786 17.0609 26 16 26C14.9391 26 13.9217 25.5786 13.1716 24.8284C12.4214 24.0783 12 23.0609 12 22V19.816C12.6672 19.5801 13.2296 19.1159 13.5876 18.5055C13.9457 17.8951 14.0765 17.1778 13.9568 16.4803C13.8371 15.7828 13.4747 15.15 12.9337 14.6939C12.3926 14.2378 11.7077 13.9876 11 13.9876C10.2923 13.9876 9.60742 14.2378 9.06635 14.6939C8.52528 15.15 8.16288 15.7828 8.04321 16.4803C7.92354 17.1778 8.0543 17.8951 8.41237 18.5055C8.77045 19.1159 9.33279 19.5801 10 19.816V22C10 23.5913 10.6321 25.1174 11.7574 26.2426C12.8826 27.3679 14.4087 28 16 28C17.5913 28 19.1174 27.3679 20.2426 26.2426C21.3679 25.1174 22 23.5913 22 22V20.899C23.1285 20.6671 24.1426 20.0532 24.8712 19.1608C25.5998 18.2684 25.9985 17.1521 26 16V10H23ZM11 16C11.1978 16 11.3911 16.0586 11.5556 16.1685C11.72 16.2784 11.8482 16.4346 11.9239 16.6173C11.9996 16.8 12.0194 17.0011 11.9808 17.1951C11.9422 17.3891 11.847 17.5673 11.7071 17.7071C11.5673 17.847 11.3891 17.9422 11.1951 17.9808C11.0011 18.0194 10.8 17.9996 10.6173 17.9239C10.4346 17.8482 10.2784 17.72 10.1685 17.5556C10.0587 17.3911 10 17.1978 10 17C10 16.7348 10.1054 16.4804 10.2929 16.2929C10.4804 16.1054 10.7348 16 11 16Z"
-                  fill="black"
-                />
-                <path
-                  d="M22 2H18V0L16 0V2H8V0L6 0V2H2C1.46957 2 0.960859 2.21071 0.585786 2.58579C0.210714 2.96086 0 3.46957 0 4L0 24C0 24.5304 0.210714 25.0391 0.585786 25.4142C0.960859 25.7893 1.46957 26 2 26H6V24H2V4H6V6H8V4H16V6H18V4H22V8H24V4C24 3.46957 23.7893 2.96086 23.4142 2.58579C23.0391 2.21071 22.5304 2 22 2V2Z"
-                  fill="black"
-                />
-              </svg>
-            </div>
-            <div class="bg-primary py-10 px-4">
-              <h3 class="text-center text-lg font-semibold text-white">
-                Antenatal
-              </h3>
-              <p class="service-para flex-1 py-2 text-center text-gray-100">
-                From the establishment of pregnancy through the different stages
-                of the same, culminating in delivery, ASI Ukpo Hospitals is
-                capable of providing the comfort needed to our patients and...
-              </p>
-              <div class="mt-4 flex items-end justify-center">
-                <a
-                  href="#antenatal"
-                  class="service-link rounded-full bg-white px-3 py-2 text-center text-gray-800"
-                >
-                  More Details
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="w-full border-2 border-primary md:w-1/3">
-            <div
-              class="mx-auto my-5 flex h-16 w-16 items-center justify-center rounded-full border border-primary"
-            >
-              <svg
-                width="26"
-                height="28"
-                viewBox="0 0 26 28"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M23 10V12H24V16C24 16.7956 23.6839 17.5587 23.1213 18.1213C22.5587 18.6839 21.7957 19 21 19C20.2044 19 19.4413 18.6839 18.8787 18.1213C18.3161 17.5587 18 16.7956 18 16V12H19V10H16V16C16.0015 17.1521 16.4002 18.2684 17.1288 19.1608C17.8575 20.0532 18.8715 20.6671 20 20.899V22C20 23.0609 19.5786 24.0783 18.8284 24.8284C18.0783 25.5786 17.0609 26 16 26C14.9391 26 13.9217 25.5786 13.1716 24.8284C12.4214 24.0783 12 23.0609 12 22V19.816C12.6672 19.5801 13.2296 19.1159 13.5876 18.5055C13.9457 17.8951 14.0765 17.1778 13.9568 16.4803C13.8371 15.7828 13.4747 15.15 12.9337 14.6939C12.3926 14.2378 11.7077 13.9876 11 13.9876C10.2923 13.9876 9.60742 14.2378 9.06635 14.6939C8.52528 15.15 8.16288 15.7828 8.04321 16.4803C7.92354 17.1778 8.0543 17.8951 8.41237 18.5055C8.77045 19.1159 9.33279 19.5801 10 19.816V22C10 23.5913 10.6321 25.1174 11.7574 26.2426C12.8826 27.3679 14.4087 28 16 28C17.5913 28 19.1174 27.3679 20.2426 26.2426C21.3679 25.1174 22 23.5913 22 22V20.899C23.1285 20.6671 24.1426 20.0532 24.8712 19.1608C25.5998 18.2684 25.9985 17.1521 26 16V10H23ZM11 16C11.1978 16 11.3911 16.0586 11.5556 16.1685C11.72 16.2784 11.8482 16.4346 11.9239 16.6173C11.9996 16.8 12.0194 17.0011 11.9808 17.1951C11.9422 17.3891 11.847 17.5673 11.7071 17.7071C11.5673 17.847 11.3891 17.9422 11.1951 17.9808C11.0011 18.0194 10.8 17.9996 10.6173 17.9239C10.4346 17.8482 10.2784 17.72 10.1685 17.5556C10.0587 17.3911 10 17.1978 10 17C10 16.7348 10.1054 16.4804 10.2929 16.2929C10.4804 16.1054 10.7348 16 11 16Z"
-                  fill="black"
-                />
-                <path
-                  d="M22 2H18V0L16 0V2H8V0L6 0V2H2C1.46957 2 0.960859 2.21071 0.585786 2.58579C0.210714 2.96086 0 3.46957 0 4L0 24C0 24.5304 0.210714 25.0391 0.585786 25.4142C0.960859 25.7893 1.46957 26 2 26H6V24H2V4H6V6H8V4H16V6H18V4H22V8H24V4C24 3.46957 23.7893 2.96086 23.4142 2.58579C23.0391 2.21071 22.5304 2 22 2V2Z"
-                  fill="black"
-                />
-              </svg>
-            </div>
-            <div class="bg-primary py-10 px-4">
-              <h3 class="text-center text-lg font-semibold text-white">
-                Dialysis
-              </h3>
-              <p class="service-para flex-1 py-2 text-center text-gray-100">
-                ASI Ukpo dialysis centre is recognized as one of the best
-                dialysis centre in south-south Nigeria due to its advanced
-                technology and certified experts. The centre has many qualified
-                doctors working....
-              </p>
-              <div class="mt-4 flex items-end justify-center">
-                <a
-                  href="#dialysis"
-                  class="service-link rounded-full bg-white px-3 py-2 text-center text-gray-800"
-                >
-                  More Details
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="w-full border-2 border-primary md:w-1/3">
-            <div
-              class="mx-auto my-5 flex h-16 w-16 flex-1 items-center justify-center rounded-full border border-primary"
-            >
-              <svg
-                width="26"
-                height="28"
-                viewBox="0 0 26 28"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M23 10V12H24V16C24 16.7956 23.6839 17.5587 23.1213 18.1213C22.5587 18.6839 21.7957 19 21 19C20.2044 19 19.4413 18.6839 18.8787 18.1213C18.3161 17.5587 18 16.7956 18 16V12H19V10H16V16C16.0015 17.1521 16.4002 18.2684 17.1288 19.1608C17.8575 20.0532 18.8715 20.6671 20 20.899V22C20 23.0609 19.5786 24.0783 18.8284 24.8284C18.0783 25.5786 17.0609 26 16 26C14.9391 26 13.9217 25.5786 13.1716 24.8284C12.4214 24.0783 12 23.0609 12 22V19.816C12.6672 19.5801 13.2296 19.1159 13.5876 18.5055C13.9457 17.8951 14.0765 17.1778 13.9568 16.4803C13.8371 15.7828 13.4747 15.15 12.9337 14.6939C12.3926 14.2378 11.7077 13.9876 11 13.9876C10.2923 13.9876 9.60742 14.2378 9.06635 14.6939C8.52528 15.15 8.16288 15.7828 8.04321 16.4803C7.92354 17.1778 8.0543 17.8951 8.41237 18.5055C8.77045 19.1159 9.33279 19.5801 10 19.816V22C10 23.5913 10.6321 25.1174 11.7574 26.2426C12.8826 27.3679 14.4087 28 16 28C17.5913 28 19.1174 27.3679 20.2426 26.2426C21.3679 25.1174 22 23.5913 22 22V20.899C23.1285 20.6671 24.1426 20.0532 24.8712 19.1608C25.5998 18.2684 25.9985 17.1521 26 16V10H23ZM11 16C11.1978 16 11.3911 16.0586 11.5556 16.1685C11.72 16.2784 11.8482 16.4346 11.9239 16.6173C11.9996 16.8 12.0194 17.0011 11.9808 17.1951C11.9422 17.3891 11.847 17.5673 11.7071 17.7071C11.5673 17.847 11.3891 17.9422 11.1951 17.9808C11.0011 18.0194 10.8 17.9996 10.6173 17.9239C10.4346 17.8482 10.2784 17.72 10.1685 17.5556C10.0587 17.3911 10 17.1978 10 17C10 16.7348 10.1054 16.4804 10.2929 16.2929C10.4804 16.1054 10.7348 16 11 16Z"
-                  fill="black"
-                />
-                <path
-                  d="M22 2H18V0L16 0V2H8V0L6 0V2H2C1.46957 2 0.960859 2.21071 0.585786 2.58579C0.210714 2.96086 0 3.46957 0 4L0 24C0 24.5304 0.210714 25.0391 0.585786 25.4142C0.960859 25.7893 1.46957 26 2 26H6V24H2V4H6V6H8V4H16V6H18V4H22V8H24V4C24 3.46957 23.7893 2.96086 23.4142 2.58579C23.0391 2.21071 22.5304 2 22 2V2Z"
-                  fill="black"
-                />
-              </svg>
-            </div>
-            <div class="bg-primary py-10 px-4">
-              <h3 class="text-center text-lg font-semibold text-white">
-                Operating Theatre
-              </h3>
-              <p class="service-para py-2 text-center text-gray-100">
-                With a modular theatre, ASI Ukpo Hospitals is capable of
-                delivering world-class surgical operations with a high margin of
-                safety. We have latest machines to perfom complex operation...
-              </p>
-              <div class="mt-4 flex items-end justify-center">
-                <a
-                  href="#operating"
+                  href="#brachytherapy"
                   class="service-link rounded-full bg-white px-3 py-2 text-center text-gray-800"
                 >
                   More Details
@@ -575,78 +285,46 @@
         class="flex flex-col justify-center justify-items-center space-y-5 bg-blue-200 py-10 px-10 md:col-span-4"
       >
         <a
-          href="#imaging"
+          href="#chemotherapy"
           class="service-link inactive-service px-4 py-2 text-center hover:bg-primary hover:text-white"
         >
-          Medical Imaging</a
+          Chemotherapy</a
         >
         <a
-          href="#laboratory"
+          href="#radiotherapy"
           class="service-link inactive-service px-4 py-2 text-center hover:bg-primary hover:text-white"
         >
-          Laboratory Investigations
+          Radiotherapy
         </a>
         <a
-          href="#bloodbank"
+          href="#brachytherapy"
           class="service-link inactive-service px-4 py-2 text-center hover:bg-primary hover:text-white"
         >
-          Blood Bank
-        </a>
-        <a
-          href="#gopd"
-          class="service-link inactive-service px-4 py-2 text-center hover:bg-primary hover:text-white"
-        >
-          GOPD/IPD</a
-        >
-        <a
-          href="#pharmacy"
-          class="service-link inactive-service px-4 py-2 text-center hover:bg-primary hover:text-white"
-        >
-          Pharmacy</a
-        >
-        <a
-          href="#emergency"
-          class="service-link inactive-service px-4 py-2 text-center hover:bg-primary hover:text-white"
-        >
-          Medical Emergency
-        </a>
-        <a
-          href="#operating"
-          class="service-link active-service px-4 py-2 text-center hover:bg-primary hover:text-white"
-        >
-          Operating Theatre</a
-        >
-        <a
-          href="#antenatal"
-          class="service-link inactive-service px-4 py-2 text-center hover:bg-primary hover:text-white"
-        >
-          Ante-natal</a
-        >
-
-        <a
-          href="#dialysis"
-          class="service-link inactive-service px-4 py-2 text-center hover:bg-primary hover:text-white"
-        >
-          Dialysis
+          Brachytherapy
         </a>
       </div>
       <div class="relative col-span-8">
         <div
           class="service-section col-span-8 scroll-mt-28 md:px-4"
-          id="medical"
+          id="chemotherapy"
         >
           <div>
-            <img src="img/medical-imaging.png" alt="" />
+            <img src="img/chemotherapy.jpg" alt="" />
           </div>
           <div>
-            <h2 class="heading">Medical Imaging</h2>
+            <h2 class="heading">Chemotherapy</h2>
             <p>
-              ASI Ukpo Hospital is furnished with modern equipment for
-              diagnostic imaging to guarantee accurate diagnosis which is the
-              first step towards proper healthcare. Our medical imaging services
-              include: 3/4D Digital Sonography,Digital X-ray,
-              Echocardiography,Computed Tomography (CT), Magnetic Resonance
-              imaging (MRI), Mammography, Echocardiography.
+              We offer excellent chemotherapy services, including
+              pre-chemotherapy counselling, comprehensive nutritional support
+              and reconstitution of chemotherapy in a fully functional
+              chemotherapy suite with a bio-safety cabinet. Our chemotherapy
+              drugs are sourced directly from registered, approved world-class
+              pharmaceutical companies. The presence of chemotherapy and
+              radiotherapy in one location provides the opportunity to undertake
+              adjuvant therapy and combination therapy seamlessly, providing
+              optimal treatment of the cancer, reducing the intensity of
+              sequelae / side effects, achieving a high cure rate and a better
+              quality of life thereafter.
             </p>
             <div class="my-10">
               <a href="#" class="button">Read More</a>
@@ -655,24 +333,31 @@
         </div>
         <div
           class="service-section col-span-8 scroll-mt-28 md:px-4"
-          id="laboratory"
+          id="radiotherapy"
         >
           <div>
-            <img src="img/labortory.png" alt="" />
+            <img src="img/radiotherapy.jpg" alt="" />
           </div>
           <div>
-            <h2 class="heading">Laboratory Investigations</h2>
+            <h2 class="heading">Radiotherapy</h2>
             <p>
-              We also have as part of our diagnostic services, from routine to
-              specialized investigations for diseases and its effects manned by
-              a team of qualified and experienced medical laboratory scientists
-              and pathologists. Our laboratory is equipped with a fully
-              automated analyzer installed to ensure accuracy, precision,
-              reproducible and reliable results within the shortest turn-around
-              time. Our investigation includes tests in Clinical Chemistry,
-              Microbiology/parasitology, Cytology/Histology,
-              Immunohistochemistry Hematology and blood transfusion,
-              Serotology/Immunology and Endocrinology.
+              ASI Ukpo Comprehensive Cancer Centre utilizes an Elekta Synergy
+              multimodal multi-energy LINAC with integrated 160-leaf
+              interdigitating multileaf collimators, with the ability to deliver
+              precise and rapid external beam radiation therapy using the finest
+              techniques available - including 3D-CRT, IMRT, VMAT and SRS – for
+              the treatment of cancer. It is the first centre with a ProKnow
+              Planning tool for online auto segmentation. Our Monaco 5.5.1 is
+              deployed for advanced radiotherapy techniques with the best
+              algorithms. Our 160-MLC centre deploys patient-specific QA with
+              the most sophisticated 4D Octavius dosimetry tools. We also employ
+              MOSAIQ Medical Oncology, adopting a robust database streamlining
+              our patient data, clinical regimens and pharmacy information, so
+              we can deliver the best possible care for every patient. The
+              Cancer Centre is equipped with its own CT Simulator, a 90-cm large
+              bore Canon CT machine, the largest in the region, with the
+              advantage of accommodating all immobilization devices to achieve
+              the most precise diagnosis and reproducibility during treatment.
             </p>
           </div>
         </div>
@@ -681,141 +366,18 @@
           id="operating"
         >
           <div>
-            <img src="img/oper.jpg" alt="" />
+            <img src="img/brachytherapy.jpg" alt="" />
           </div>
           <div>
-            <h2 class="heading">Operating Theatre</h2>
+            <h2 class="heading">Brachytherapy</h2>
             <p>
-              With a modular theatre, ASI Ukpo Hospitals is capable of
-              delivering world-class surgical operations with a high margin of
-              safety.
-            </p>
-          </div>
-        </div>
-        <div class="service-section col-span-8 scroll-mt-28 md:px-4" id="gopd">
-          <div>
-            <img src="img/operating.png" alt="" />
-          </div>
-          <div>
-            <h2 class="heading">GOPD/IPD</h2>
-            <p>
-              Our team of doctors and nurses dedicated to all out-patient clinic
-              care in the areas of general medicine, Endocrinology, Cardiology,
-              Urology, Orthopaedics, Paediatrics, and dialysis,
-              Gastroenterology, Hematology, Infectious Diseases, Vascular
-              Surgery, Plastic Surgery, General Surgery, Rheumatology, Urology
-              and Preventive diagnostic clinics.
-            </p>
-          </div>
-        </div>
-        <div
-          class="service-section col-span-8 scroll-mt-28 md:px-4"
-          id="bloodbank"
-        >
-          <div>
-            <img src="img/operating.png" alt="" />
-          </div>
-          <div>
-            <h2 class="heading">Blood Bank</h2>
-            <p>
-              ASI Ukpo Blood Bank runs an efficient blood banking system that
-              caters for the various clinical transfusion needs of patients by
-              providing readily available blood products such as whole blood,
-              packed cell, fresh frozen plasma, plasma-Cryoprecipitate and
-              Cryosupernatant, platelets-rich and platelets poor plasma, amongst
-              other services.
-            </p>
-          </div>
-        </div>
-        <div
-          class="service-section col-span-8 scroll-mt-28 md:px-4"
-          id="dialysis"
-        >
-          <div>
-            <img src="img/operating.png" alt="" />
-          </div>
-          <div>
-            <h2 class="heading">Dialysis</h2>
-            <p>
-              ASI Ukpo dialysis centre is recognized as one of the best dialysis
-              centre in south-south Nigeria due to its advanced technology and
-              certified experts. It is a centre of excellence, which presents
-              the levels of professional expertise and leadership through a
-              galaxy of eminent faculty. Our dialysis department is committed to
-              treating the patients with utmost care and providing necessary
-              treatment to their kidney related problems.
-            </p>
-          </div>
-        </div>
-        <div
-          class="service-section col-span-8 scroll-mt-28 md:px-4"
-          id="antenatal"
-        >
-          <div>
-            <img src="img/operating.png" alt="" />
-          </div>
-          <div>
-            <h2 class="heading">Antenatal</h2>
-            <p>
-              From the establishment of pregnancy through the different stages
-              of the same, culminating in delivery, ASI Ukpo Hospitals is
-              capable of providing the comfort needed to our teeming mothers and
-              newborns.
-            </p>
-          </div>
-        </div>
-        <div
-          class="service-section col-span-8 scroll-mt-28 md:px-4"
-          id="pharmacy"
-        >
-          <div>
-            <img src="img/phr.jpg" alt="" />
-          </div>
-          <div>
-            <h2 class="heading">Pharmacy</h2>
-            <p>
-              Our pharmacy comprises both the inpatient, outpatient and oncology
-              pharmacy. The pharmacy offers services to all patients on
-              admission and also visiting patients providing the best drugs at
-              the most affordable rate. We also have a comprehensive oncology
-              pharmacy that provides and reconstitutes all chemotherapy drugs in
-              a safe and clean environment (BIOSAFETY CABINET)..
-            </p>
-          </div>
-        </div>
-        <div
-          class="service-section col-span-8 scroll-mt-28 md:px-4"
-          id="imaging"
-        >
-          <div>
-            <img src="img/medical-imaging.png" alt="" />
-          </div>
-          <div>
-            <h2 class="heading">Medical Imaging</h2>
-            <p>
-              ASI Ukpo Hospital is furnished with modern equipment for
-              diagnostic imaging to guarantee accurate diagnosis which is the
-              first step towards proper healthcare. Our medical imaging services
-              include: 3/4D Digital Sonography,Digital X-ray,
-              Echocardiography,Computed Tomography (CT), Magnetic Resonance
-              imaging (MRI), Mammography, Echocardiography.
-            </p>
-          </div>
-        </div>
-        <div
-          class="service-section col-span-8 scroll-mt-28 md:px-4"
-          id="emergency"
-        >
-          <div>
-            <img src="img/emergency.png" alt="" />
-          </div>
-          <div>
-            <h2 class="heading">Medical Emergency</h2>
-            <p>
-              We place patient care at the pinnacle of our company’s values, we
-              are dedicated to maintaining the highest standard of care and to
-              providing safe, timely and efficient ambulance transport services
-              to healthcare providers and their patients/clients in Nigeria.
+              Our Flexitron HDR Brachy machine offers a safe, fast and full
+              brachytherapy solution. It is designed for precise, targeted
+              treatment of various cancers such as cervical, prostate, breast,
+              skin and rectal. Brachytherapy is suitable as a single modality or
+              in combination with other treatments.Elekta Brachytherapy offers
+              best-in-class clinical solutions, a worldwide presence and above
+              all, a commitment to patient care.
             </p>
           </div>
         </div>

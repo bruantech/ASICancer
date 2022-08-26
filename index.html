@@ -13,7 +13,7 @@
       defer
       src="https://unpkg.com/alpinejs@3.2.3/dist/cdn.min.js"
     ></script>
-    <title>ASI Hospital</title>
+    <title>ASI Cancer</title>
   </head>
   <body class="bg-white" x-data>
     <div class="w-full bg-gray-100 py-1 px-2">
@@ -141,9 +141,7 @@
             <div class="group relative cursor-pointer py-2">
               <a href="cancer.html" class="inactive-menu">Cancer Screening</a>
             </div>
-            <div class="group relative cursor-pointer py-2">
-              <a href="therapy.html" class="inactive-menu">Cancer Therapy </a>
-            </div>
+
             <div class="group relative cursor-pointer py-2">
               <a href="services.html" class="inactive-menu">Services</a>
               <div
@@ -151,59 +149,27 @@
                 onClick=""
               >
                 <a
-                  href="services.html#operating"
-                  class="my-3 block py-1 px-4 text-gray-100 transition duration-700 hover:bg-white hover:text-primary md:my-0"
-                  >Operating Theatre</a
+                  href="#chemotherapy"
+                  class="service-menu-link block py-1 px-4 text-gray-100 transition duration-700 hover:bg-white hover:text-primary md:my-0"
+                >
+                  Chemotherapy
+                </a>
+                <a
+                  href="#radiotherapy"
+                  class="service-menu-link my-3 block py-1 px-4 text-gray-100 transition duration-700 hover:bg-white hover:text-primary md:my-0"
+                  >Radiotherapy</a
                 >
 
                 <a
-                  href="services.html#laboratory"
-                  class="block py-1 px-4 text-gray-100 transition duration-700 hover:bg-white hover:text-primary md:my-0"
+                  href="#brachytherapy"
+                  class="service-menu-link block py-1 px-4 text-gray-100 transition duration-700 hover:bg-white hover:text-primary md:my-0"
                 >
-                  Laboratory
-                </a>
-                <a
-                  href="services.html#gopd"
-                  class="block py-1 px-4 text-gray-100 transition duration-700 hover:bg-white hover:text-primary md:my-0"
-                >
-                  GOPD/IPD</a
-                >
-                <a
-                  href="services.html#pharmacy"
-                  class="block py-1 px-4 text-gray-100 transition duration-700 hover:bg-white hover:text-primary md:my-0"
-                >
-                  Pharmacy</a
-                >
-                <a
-                  href="services.html#emergency"
-                  class="block py-1 px-4 text-gray-100 transition duration-700 hover:bg-white hover:text-primary md:my-0"
-                >
-                  Emergency Services</a
-                >
-                <a
-                  href="services.html#antenatal"
-                  class="block py-1 px-4 text-gray-100 transition duration-700 hover:bg-white hover:text-primary md:my-0"
-                >
-                  Antenatal</a
-                >
-                <a
-                  href="services.html#bloodbank"
-                  class="block py-1 px-4 text-gray-100 transition duration-700 hover:bg-white hover:text-primary md:my-0"
-                >
-                  Blood Bank
-                </a>
-                <a
-                  href="services.html#dialysis"
-                  class="block py-1 px-4 text-gray-100 transition duration-700 hover:bg-white hover:text-primary md:my-0"
-                >
-                  Dialysis
+                  Brachytherapy
                 </a>
               </div>
             </div>
             <div class="group relative cursor-pointer py-2">
-              <a href="contact.html" class="inactive-menu"
-                >Diagnostics Centre</a
-              >
+              <a href="contact.html" class="inactive-menu">Hospital</a>
             </div>
             <div class="group relative cursor-pointer py-2">
               <a href="contact.html" class="inactive-menu">Contact Us</a>
@@ -257,9 +223,9 @@
               objective of making medical services affordable and easily
               accessible to all. We grew into a full-fledged hospital in 2018.
               In a continuous quest to meet healthcare demands in the clinic,
-              the ASI Ukpo Comprehensive Diagnostics Centre (AUCCC) was
-              established as the first privately owned Diagnostics Centre in the
-              south-south region of Nigeria.
+              the ASI Ukpo Comprehensive Hospital (AUCCC) was established as the
+              first privately owned Hospital in the south-south region of
+              Nigeria.
             </p>
             <p
               class="px-2 py-2 text-center text-black md:text-gray-50"
@@ -267,8 +233,8 @@
             >
               We offer full diagnostic services ranging from medical imaging to
               laboratory investigations; in-patient wards; surgery; a blood bank
-              and our Diagnostics Centre offering radiotherapy, brachytherapy
-              and chemotherapy services.
+              and our Hospital offering radiotherapy, brachytherapy and
+              chemotherapy services.
             </p>
             <p class="px-2 py-2 text-gray-700"></p>
 
@@ -512,9 +478,9 @@
               <span class="pl-4 text-xl font-semibold"> Our Vision </span>
             </div>
             <p class="mt-4 text-gray-700">
-              Our vision is to be the foremost Cancer Centre in West
-              Africa, utilizing the best ultramodern equipment available for
-              diagnosis and treatment of a wide range of cancers.
+              Our vision is to be the foremost Cancer Centre in West Africa,
+              utilizing the best ultramodern equipment available for diagnosis
+              and treatment of a wide range of cancers.
             </p>
           </div>
           <div class="w-full md:w-1/3">
@@ -553,9 +519,9 @@
         Our Services
       </h1>
       <p class="w-full py-3 md:w-1/2" x-intersect="$el.classList.add('fadeUp')">
-        At our hospital, you can experience the best and the most extensive
-        range of services in the state. Providing quality services to all the
-        patients makes us more confident
+        At our diagnostic centre, you can experience the best and the most
+        extensive range of services in the state. Providing quality services to
+        all the patients makes us more confident.
       </p>
       <div
         class="mt-4 flex flex-col justify-between space-y-4 md:flex-row md:space-y-0"
@@ -564,154 +530,46 @@
         <div class="relative">
           <img
             class="h-[390px] w-[345px] object-cover"
-            src="img/medical-imaging.png"
+            src="img/chemotherapy.jpg"
             alt=""
           />
           <a
             href="services.html#imaging"
             class="absolute bottom-0 bg-primary px-5 py-3 text-white"
           >
-            Medical Imaging
+            Chemotherapy
           </a>
         </div>
         <div class="relative">
           <img
             class="h-[390px] w-[345px] object-cover"
-            src="img/investigations.png"
+            src="img/radiotherapy.jpg"
             alt=""
           />
           <a
             href="services.html#laboratory"
             class="absolute bottom-0 bg-primary px-5 py-3 text-white"
           >
-            Laboratory Investigations
+            Radiotherapy
           </a>
         </div>
         <div class="relative">
           <img
             class="h-[390px] w-[345px] object-cover"
-            src="img/general.png"
+            src="img/brachytherapy.jpg"
             alt=""
           />
           <a
             href="services.html#gopd"
             class="absolute bottom-0 bg-primary px-5 py-3 text-white"
           >
-            General Out / In-Patient Departments
+            Brachytherapy
           </a>
         </div>
       </div>
-      <div
-        class="mt-10 flex flex-col justify-between space-y-5 md:flex-row md:space-y-0"
-        x-intersect="$el.classList.add('fadeLeft')"
-      >
-        <div class="relative">
-          <img
-            class="h-[390px] w-[345px] object-cover"
-            src="img/phr.jpg"
-            alt=""
-          />
-          <a
-            href="services.html#pharmacy"
-            class="absolute bottom-0 bg-primary px-5 py-3 text-white"
-          >
-            Pharmacy
-          </a>
-        </div>
-        <div class="relative">
-          <img
-            class="h-[390px] w-[345px] object-cover"
-            src="img/emergency.png"
-            alt=""
-          />
-          <a
-            href="services.html#emergency"
-            class="absolute bottom-0 bg-primary px-5 py-3 text-white"
-          >
-            Emergency Medical Services
-          </a>
-        </div>
-        <div class="relative">
-          <img
-            class="h-[390px] w-[345px] object-cover"
-            src="img/anitnational.png"
-            alt=""
-          />
-          <a
-            href="services.html#antenatal"
-            class="absolute bottom-0 bg-primary px-5 py-3 text-white"
-          >
-            Ante-Natal Services
-          </a>
-        </div>
-      </div>
-      <div
-        class="mt-10 flex flex-col justify-between space-y-5 md:flex-row md:space-y-0"
-        x-intersect="$el.classList.add('fadeRight')"
-      >
-        <div class="relative">
-          <img
-            class="h-[390px] w-[345px] object-cover"
-            src="img/oper.jpg"
-            alt=""
-          />
-          <a
-            href="services.html#operating"
-            class="absolute bottom-0 bg-primary px-5 py-3 text-white"
-          >
-            Operating Theatre
-          </a>
-        </div>
-        <div class="relative">
-          <img
-            class="h-[390px] w-[345px] object-cover"
-            src="img/bloodbank.png"
-            alt=""
-          />
-          <a
-            href="services.html#bloodbank"
-            class="absolute bottom-0 bg-primary px-5 py-3 text-white"
-          >
-            Blood Bank Services
-          </a>
-        </div>
-        <div class="relative">
-          <img
-            class="h-[390px] w-[345px] object-cover"
-            src="img/dialysis.png"
-            alt=""
-          />
-          <a
-            href="services.html#dialysis"
-            class="absolute bottom-0 bg-primary px-5 py-3 text-white"
-          >
-            Dialysis Centre
-          </a>
-        </div>
-      </div>
+
       <div class="mt-10 flex items-center justify-center">
         <a href="services.html" class="button">See All</a>
-      </div>
-    </div>
-    <div
-      class="bg-full mt-10 flex items-center py-20"
-      style="background-image: url('img/bg-dr.png')"
-      x-intersect="$el.classList.add('slide-in-fwd-center')"
-    >
-      <div class="main-container">
-        <h1 class="heading px-3 text-white">Health Care Plans</h1>
-        <p class="w-full py-2 px-3 text-white md:w-1/3">
-          ASI Ukpo Diagnostics & Medical Centre offers various comprehensive
-          health check plans. The plans have been designed to conform to
-          international health check standards at economical prices.
-        </p>
-        <div class="mt-5 px-3">
-          <a
-            href="health-plans.html"
-            class="rounded-full bg-white px-6 py-3 text-lg font-semibold text-black"
-            >See Details</a
-          >
-        </div>
       </div>
     </div>
 
